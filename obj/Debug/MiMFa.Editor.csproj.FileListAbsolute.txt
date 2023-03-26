@@ -43,6 +43,7 @@ D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\HtmlAgilityPack.xml
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Editor.csproj.AssemblyReference.cache
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Controls.WinForm.Editor.EditBox.resources
+D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Controls.WinForm.Editor.EditCodeBox.resources
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Controls.WinForm.Editor.Tools.FindForm.resources
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Controls.WinForm.Editor.Tools.GoToForm.resources
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Controls.WinForm.Editor.Tools.HotkeysEditorForm.resources
@@ -54,4 +55,3 @@ D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Editor.csproj.CopyComplete
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa Framework.Editor.exe
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa Framework.Editor.pdb
-D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Controls.WinForm.Editor.EditCodeBox.resources

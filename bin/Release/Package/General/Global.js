@@ -268,5 +268,4 @@ const wait 				= function(milliseconds)
   } while (currentDate - date < milliseconds);
 }
 
-
 "Global Functions Library Installed Successfully"
