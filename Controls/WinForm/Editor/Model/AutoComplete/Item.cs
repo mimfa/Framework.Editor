@@ -45,29 +45,36 @@ namespace MiMFa.Controls.WinForm.Editor.Model.AutoComplete
         /// </summary>
         public virtual Color ForeColor
         {
-            get { return Color.Transparent; }
-            set { throw new NotImplementedException("Override this property to change color"); }
+            get { return _ForeColor; }
+            set { _ForeColor = value; }
         }
+        protected  Color _ForeColor = Color.Transparent;
 
         /// <summary>
         /// Back color of item
         /// </summary>
         public virtual Color BackColor
         {
-            get { return Color.Transparent; }
-            set { throw new NotImplementedException("Override this property to change color"); }
+            get { return _BackColor; }
+            set { _BackColor = value; }
         }
+        protected Color _BackColor = Color.Transparent;
         public AutoCompleteMenu Parent { get; internal set; }
-        
+
 
         public Item(string text = null, int imageIndex = -1, string menuText = null, string toolTipTitle = null, string toolTipText = null)
         {
-            this.Title = string.IsNullOrWhiteSpace(menuText)? text: menuText;
+            this.Title = string.IsNullOrWhiteSpace(menuText) ? text : menuText;
             this.Text = string.IsNullOrWhiteSpace(text) ? menuText : text;
             compartionText = Text.ToLower();
             this.ImageIndex = imageIndex;
             this.ToolTipTitle = toolTipTitle;
             this.ToolTipText = toolTipText;
+            if (Default.HasTemplator && Default.Templator.Palette != null)
+            {
+                _ForeColor = Default.Templator.Palette.MenuForeColor;
+                _BackColor = Default.Templator.Palette.MenuBackColor;
+            }
         }
 
         /// <summary>

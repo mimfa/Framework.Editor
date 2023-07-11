@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Editor
+namespace MiMFa.UIL.Editor
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Editor
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new EditDialog());
         }
     }
 }

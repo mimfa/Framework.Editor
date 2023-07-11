@@ -227,7 +227,7 @@ namespace MiMFa.Controls.WinForm.Editor
         /// </summary>
         [Browsable(true)] 
         [Description("Colors of some service visual markers.")]
-        [TypeConverter(typeof(ExpandableObjectConverter))]
+        //[TypeConverter(typeof(ExpandableObjectConverter))]
         public ServiceColors ServiceColors { get; set; }
 
         /// <summary>
@@ -982,6 +982,13 @@ namespace MiMFa.Controls.WinForm.Editor
         }
 
         /// <summary>
+        /// Detect Language for highlighting by built-in highlighter.
+        /// </summary>
+        public bool AutoDetectLanguage
+        {
+            get; set;
+        } = true;
+        /// <summary>
         /// Language for highlighting by built-in highlighter.
         /// </summary>
         public Language Language
@@ -1716,6 +1723,17 @@ namespace MiMFa.Controls.WinForm.Editor
         }
 
 
+
+        /// <summary>
+        /// Add and shows simple text hint
+        /// </summary>
+        /// <param name="text">Text of simple hint</param>
+        /// <param name="inline">Inlining. If True then hint will moves apart text</param>
+        /// <param name="dock">Docking. If True then hint will fill whole line</param>
+        public virtual Hint AddHint(string text, bool inline= true, bool dock=true)
+        {
+            return AddHint(Selection, text, false, inline, dock);
+        }
         /// <summary>
         /// Add and shows the hint
         /// </summary>
@@ -1724,7 +1742,7 @@ namespace MiMFa.Controls.WinForm.Editor
         /// <param name="scrollToHint">Scrolls textbox to the hint</param>
         /// <param name="inline">Inlining. If True then hint will moves apart text</param>
         /// <param name="dock">Docking. If True then hint will fill whole line</param>
-        public virtual Hint AddHint(Range range, Control innerControl, bool scrollToHint, bool inline, bool dock)
+        public virtual Hint AddHint(Range range, Control innerControl, bool scrollToHint, bool inline = true, bool dock = true)
         {
             var hint = new Hint(range, innerControl, inline, dock);
             Hints.Add(hint);
@@ -1752,7 +1770,7 @@ namespace MiMFa.Controls.WinForm.Editor
         /// <param name="scrollToHint">Scrolls textbox to the hint</param>
         /// <param name="inline">Inlining. If True then hint will moves apart text</param>
         /// <param name="dock">Docking. If True then hint will fill whole line</param>
-        public virtual Hint AddHint(Range range, string text, bool scrollToHint, bool inline, bool dock)
+        public virtual Hint AddHint(Range range, string text, bool scrollToHint, bool inline = true, bool dock = true)
         {
             var hint = new Hint(range, text, inline, dock);
             Hints.Add(hint);
@@ -3817,7 +3835,7 @@ namespace MiMFa.Controls.WinForm.Editor
                     break;
 
                 case FCTBAction.CommentSelected:
-                    CommentSelected();
+                    ToggleComment();
                     break;
 
                 case FCTBAction.Cut:
@@ -4371,6 +4389,21 @@ namespace MiMFa.Controls.WinForm.Editor
         }
 
         /// <summary>
+        /// Convert selected text to upper/lower/Sentence/Title cases
+        /// </summary>
+        public virtual void ToggleCase()
+        {
+            if (selection.IsEmpty) Selection.Expand();
+            var t = SelectedText.Trim();
+            var u1 = char.IsUpper(t.First());
+            var u2 = char.IsUpper(t.Last());
+            if (u1 && u2) LowerCase();
+            else if (!u1 && !u2 && t.Contains("\n")) SentenceCase();
+            else if (!u1 && !u2) TitleCase();
+            else if (u1 != u2) UpperCase();
+        }
+
+        /// <summary>
         /// Convert selected text to upper case
         /// </summary>
         public virtual void UpperCase()
@@ -4427,24 +4460,58 @@ namespace MiMFa.Controls.WinForm.Editor
         /// <summary>
         /// Insert/remove comment prefix into selected lines
         /// </summary>
-        public void CommentSelected()
+        public void ToggleComment()
         {
-            CommentSelected(CommentPrefix);
+            ToggleComment(CommentPrefix);
         }
-
         /// <summary>
         /// Insert/remove comment prefix into selected lines
         /// </summary>
-        public virtual void CommentSelected(string commentPrefix)
+        public virtual void ToggleComment(string commentPrefix)
         {
             if (string.IsNullOrEmpty(commentPrefix))
                 return;
             Selection.Normalize();
-            bool isCommented = (Selection.Text??"").TrimStart().StartsWith(commentPrefix);
+            bool isCommented = (Selection.Text ?? "").TrimStart().StartsWith(commentPrefix);
             if (isCommented)
-                RemoveLinePrefix(commentPrefix);
+                UnComment(commentPrefix);
             else
-                InsertLinePrefix(commentPrefix);
+                Comment(commentPrefix);
+        }
+
+        /// <summary>
+        /// Insert comment prefix into selected lines
+        /// </summary>
+        public void Comment()
+        {
+            Comment(CommentPrefix);
+        }
+        /// <summary>
+        /// Insert comment prefix into selected lines
+        /// </summary>
+        public virtual void Comment(string commentPrefix)
+        {
+            if (string.IsNullOrEmpty(commentPrefix))
+                return;
+            Selection.Normalize();
+            InsertLinePrefix(commentPrefix);
+        }
+        /// <summary>
+        /// Remove comment prefix into selected lines
+        /// </summary>
+        public void UnComment()
+        {
+            UnComment(CommentPrefix);
+        }
+        /// <summary>
+        /// Remove comment prefix into selected lines
+        /// </summary>
+        public virtual void UnComment(string commentPrefix)
+        {
+            if (string.IsNullOrEmpty(commentPrefix))
+                return;
+            Selection.Normalize();
+            RemoveLinePrefix(commentPrefix);
         }
 
         public void OnKeyPressing(KeyPressEventArgs args)
@@ -7670,6 +7737,44 @@ window.status = ""#print"";
                     LineRemoved(this, new LineRemovedEventArgs(index, count, removedLineIds));
         }
 
+
+        internal Language DetectFileLanguage(string fileName)
+        {
+            switch (Path.GetExtension(fileName).ToLower())
+            {
+                case ".xml":
+                case ".xmls":
+                    return  Language.XML;
+                case ".sql":
+                    return Language.SQL;
+                case ".php":
+                    return Language.PHP;
+                case ".lua":
+                    return Language.Lua;
+                case ".json":
+                    return Language.JSON;
+                case ".htm":
+                case ".html":
+                    return Language.HTML;
+                case ".c":
+                case ".cp":
+                case ".cpp":
+                case ".cs":
+                    return Language.CS;
+                case ".vb":
+                case ".vbs":
+                    return Language.VB;
+                case ".js":
+                case ".jsm":
+                case ".jsx":
+                case ".ts":
+                case ".tsx":
+                    return Language.JS;
+                default:
+                    return Language.Custom;
+            }
+        }
+
         /// <summary>
         /// Open text file
         /// </summary>
@@ -7678,6 +7783,7 @@ window.status = ""#print"";
             var ts = CreateTextSource();
             try
             {
+                if (AutoDetectLanguage) Language = DetectFileLanguage(fileName);
                 InitTextSource(ts);
                 Text = File.ReadAllText(fileName, enc);
                 ClearUndo();
@@ -7727,6 +7833,7 @@ window.status = ""#print"";
             var fts = new FileTextSource(this);
             try
             {
+                if (AutoDetectLanguage) Language = DetectFileLanguage(fileName);
                 InitTextSource(fts);
                 fts.OpenFile(fileName, enc);
                 IsChanged = false;

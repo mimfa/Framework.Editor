@@ -55,3 +55,27 @@ D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Editor.csproj.CopyComplete
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa Framework.Editor.exe
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa Framework.Editor.pdb
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Editor.csprojAssemblyReference.cache
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Controls.WinForm.Editor.EditBox.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Controls.WinForm.Editor.Tools.FindForm.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Controls.WinForm.Editor.Tools.GoToForm.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Controls.WinForm.Editor.Tools.HotkeysEditorForm.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Controls.WinForm.Editor.Tools.ReplaceForm.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Properties.Resources.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Editor.csproj.GenerateResource.cache
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa Framework.Editor.exe
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa Framework.Editor.pdb
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\MiMFa Framework.Editor.exe.config
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\MiMFa Framework.Editor.exe
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\MiMFa Framework.Editor.pdb
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\MiMFa Framework.dll
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\System.Data.SQLite.dll
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\HtmlAgilityPack.dll
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\MiMFa Framework.pdb
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\MiMFa Framework.dll.config
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\HtmlAgilityPack.pdb
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\HtmlAgilityPack.xml
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Controls.WinForm.Editor.EditCodeBox.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Editor.csproj.CoreCompileInputs.cache
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Editor.csproj.CopyComplete
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.UIL.Editor.EditDialog.resources

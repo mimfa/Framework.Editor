@@ -475,7 +475,11 @@ namespace MiMFa.Controls.WinForm.Editor.Model.Syntax
                 new Regex(@"\b\d+[\.]?\d*\b", HighlightingPattern.RegexCompiledOption),
                 HighlightingPattern.NumberStyle)
             );
-            
+            Syntax.HighlightingPatterns.Add(new HighlightingPattern("PHPString0",
+                new Regex(@"(?:(['""]).*[^\\]\1)|(?:`[^`]*[^\\]`)|(`|""|')\2", RegexOptions.Multiline | HighlightingPattern.RegexCompiledOption),
+                HighlightingPattern.StringStyle)
+            );
+            return Syntax;
             Syntax.HighlightingPatterns.Add(new HighlightingPattern("PHPComment0",
                 new Regex(@"(//|#).*$", RegexOptions.Multiline | HighlightingPattern.RegexCompiledOption),
                 HighlightingPattern.CommentStyle)
@@ -488,10 +492,6 @@ namespace MiMFa.Controls.WinForm.Editor.Model.Syntax
                  new Regex(@"(/\*.*?\*/)|(.*\*/)",
                                          RegexOptions.Singleline | RegexOptions.RightToLeft | HighlightingPattern.RegexCompiledOption),
                 HighlightingPattern.CommentStyle)
-            );
-            Syntax.HighlightingPatterns.Add(new HighlightingPattern("PHPString",
-                new Regex(@"""""|''|"".*?[^\\]""|'.*?[^\\]'", HighlightingPattern.RegexCompiledOption),
-                HighlightingPattern.StringStyle)
             );
             return Syntax;
         }
@@ -548,6 +548,10 @@ namespace MiMFa.Controls.WinForm.Editor.Model.Syntax
                                            HighlightingPattern.RegexCompiledOption),
                 HighlightingPattern.NumberStyle)
             );
+            Syntax.HighlightingPatterns.Add(new HighlightingPattern("JScriptString0",
+                new Regex(@"(?:(['""]).*[^\\]\1)|(?:`[^`]*[^\\]`)|(`|""|')\2", RegexOptions.Multiline | HighlightingPattern.RegexCompiledOption),
+                HighlightingPattern.StringStyle)
+            );
             Syntax.HighlightingPatterns.Add(new HighlightingPattern("JScriptComment",
                  new Regex(@"\/\/.*$", RegexOptions.Multiline | HighlightingPattern.RegexCompiledOption),
                 HighlightingPattern.CommentStyle)
@@ -560,10 +564,6 @@ namespace MiMFa.Controls.WinForm.Editor.Model.Syntax
                  new Regex(@"(\/\*.*?\*\/)|(.*\*\/)",
                                              RegexOptions.Singleline | RegexOptions.RightToLeft | HighlightingPattern.RegexCompiledOption),
                 HighlightingPattern.CommentStyle)
-            );
-            Syntax.HighlightingPatterns.Add(new HighlightingPattern("JScriptString0",
-                new Regex(@"('[^\r\n']*[^\\]')|('')|(`[^`]*[^\\]')|(``)|(""[^\r\n""]*[^\\]"")|("""")", RegexOptions.Multiline | HighlightingPattern.RegexCompiledOption),
-                HighlightingPattern.StringStyle)
             );
             return Syntax;
         }
@@ -650,8 +650,8 @@ namespace MiMFa.Controls.WinForm.Editor.Model.Syntax
                  new Regex(@"\b(\d+[\.]?\d*|true|false|null)\b", HighlightingPattern.RegexCompiledOption),
                 HighlightingPattern.NumberStyle)
             );
-            Syntax.HighlightingPatterns.Add(new HighlightingPattern("JSONString",
-                new Regex(@"""([^\\""]|\\"")*""", HighlightingPattern.RegexCompiledOption),
+            Syntax.HighlightingPatterns.Add(new HighlightingPattern("JScriptString0",
+                new Regex(@"(?:(['""]).*[^\\]\1)|(?:`[^`]*[^\\]`)|(`|""|')\2", RegexOptions.Multiline | HighlightingPattern.RegexCompiledOption),
                 HighlightingPattern.StringStyle)
             );
             return Syntax;

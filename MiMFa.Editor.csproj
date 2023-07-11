@@ -94,6 +94,9 @@
     <Compile Include="Controls\WinForm\Editor\Model\TextSource.cs" />
     <Compile Include="Controls\WinForm\Editor\Model\TypeDescriptor.cs" />
     <Compile Include="Controls\WinForm\Editor\Model\VisualMarker.cs" />
+    <Compile Include="Controls\WinForm\Editor\Tools\AutoCompleteListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Controls\WinForm\Editor\Tools\AutoCompleteMenu.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -133,11 +136,11 @@
     <Compile Include="Controls\WinForm\Editor\Tools\UnfocusablePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MiMFa Editor.cs">
+    <Compile Include="EditDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MiMFa Editor.Designer.cs">
-      <DependentUpon>MiMFa Editor.cs</DependentUpon>
+    <Compile Include="EditDialog.Designer.cs">
+      <DependentUpon>EditDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -146,6 +149,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\WinForm\Editor\EditCodeBox.resx">
       <DependentUpon>EditCodeBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\WinForm\Editor\Tools\FindForm.resx">
       <DependentUpon>FindForm.cs</DependentUpon>
@@ -159,8 +163,8 @@
     <EmbeddedResource Include="Controls\WinForm\Editor\Tools\ReplaceForm.resx">
       <DependentUpon>ReplaceForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MiMFa Editor.resx">
-      <DependentUpon>MiMFa Editor.cs</DependentUpon>
+    <EmbeddedResource Include="EditDialog.resx">
+      <DependentUpon>EditDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -187,6 +191,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Directory.png" />
+    <None Include="Resources\Document.png" />
+    <None Include="Resources\Print.png" />
+    <None Include="Resources\Redo.png" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\SaveAs-Green.png" />
+    <None Include="Resources\Save-Green.png" />
+    <None Include="Resources\Undo.png" />
+    <None Include="Resources\Zoom In.png" />
+    <None Include="Resources\Zoom Out.png" />
+    <None Include="Resources\Magnifier.png" />
+    <None Include="Resources\Marker.png" />
+    <None Include="Resources\Repace.png" />
     <Content Include="Script.ico" />
   </ItemGroup>
   <ItemGroup />
@@ -194,10 +211,6 @@
     <ProjectReference Include="..\Core\MiMFa.csproj">
       <Project>{adc72cd2-885e-442a-983e-0ba87b7234ef}</Project>
       <Name>MiMFa</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Interpreter\MiMFa.Interpreter.csproj">
-      <Project>{d7c7a63a-c0a5-4686-86e4-3552fc7776ae}</Project>
-      <Name>MiMFa.Interpreter</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
