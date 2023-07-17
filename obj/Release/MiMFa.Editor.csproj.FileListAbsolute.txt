@@ -56,9 +56,6 @@ D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Releas
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa.Editor.csproj.CopyComplete
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa Framework.Editor.exe
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa Framework.Editor.pdb
-D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\MiMFa Framework.Editor.exe.config
-D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\MiMFa Framework.Editor.exe
-D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\MiMFa Framework.Editor.pdb
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\MiMFa Framework.dll
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\System.Data.SQLite.dll
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\HtmlAgilityPack.dll
@@ -77,6 +74,9 @@ D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa.P
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa.Editor.csproj.GenerateResource.cache
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa.Editor.csproj.CoreCompileInputs.cache
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa.Editor.csproj.CopyComplete
-D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa Framework.Editor.exe
-D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa Framework.Editor.pdb
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa.UIL.Editor.EditDialog.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\MiMFa Editor.exe.config
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\MiMFa Editor.exe
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\MiMFa Editor.pdb
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa Editor.exe
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa Editor.pdb

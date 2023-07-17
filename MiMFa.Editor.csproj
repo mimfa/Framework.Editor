@@ -7,7 +7,7 @@
     <ProjectGuid>{ED0E2DAD-4B4E-4B7C-A546-B48ADA5023FC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>MiMFa</RootNamespace>
-    <AssemblyName>MiMFa Framework.Editor</AssemblyName>
+    <AssemblyName>MiMFa Editor</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

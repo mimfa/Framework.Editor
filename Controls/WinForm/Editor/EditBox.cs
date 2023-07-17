@@ -1625,6 +1625,7 @@ namespace MiMFa.Controls.WinForm.Editor
             }
         }
 
+
         /// <summary>
         /// Is undo enabled?
         /// </summary>
@@ -6317,7 +6318,7 @@ namespace MiMFa.Controls.WinForm.Editor
             #endif
             CancelToolTip();
             ClearHints();
-            IsChanged = true;
+            isChanged = true;
             TextVersion++;
             MarkLinesAsChanged(args.ChangedRange);
             ClearFoldingState(args.ChangedRange);
@@ -7875,7 +7876,7 @@ window.status = ""#print"";
         public void SaveToFile(string fileName, Encoding enc)
         {
             lines.SaveToFile(fileName, enc);
-            IsChanged = false;
+            isChanged = false;
             OnVisibleRangeChanged();
             UpdateScrollbars();
         }

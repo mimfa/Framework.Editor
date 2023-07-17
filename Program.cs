@@ -12,11 +12,11 @@ namespace MiMFa.UIL.Editor
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EditDialog());
+            Application.Run(new EditDialog(args.FirstOrDefault()));
         }
     }
 }

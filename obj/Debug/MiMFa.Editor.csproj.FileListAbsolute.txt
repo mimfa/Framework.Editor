@@ -63,11 +63,6 @@ D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Con
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Controls.WinForm.Editor.Tools.ReplaceForm.resources
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Properties.Resources.resources
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Editor.csproj.GenerateResource.cache
-D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa Framework.Editor.exe
-D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa Framework.Editor.pdb
-D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\MiMFa Framework.Editor.exe.config
-D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\MiMFa Framework.Editor.exe
-D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\MiMFa Framework.Editor.pdb
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\MiMFa Framework.dll
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\System.Data.SQLite.dll
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\HtmlAgilityPack.dll
@@ -79,3 +74,8 @@ D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Con
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Editor.csproj.CoreCompileInputs.cache
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Editor.csproj.CopyComplete
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.UIL.Editor.EditDialog.resources
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\MiMFa Editor.exe.config
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\MiMFa Editor.exe
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\MiMFa Editor.pdb
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa Editor.exe
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa Editor.pdb

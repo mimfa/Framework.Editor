@@ -34,13 +34,15 @@ namespace MiMFa.UIL.Editor
         public EditDialog(string path) : this()
         {
             if(!(
-                tsb_SaveAs.Visible =
-                tsb_New.Visible =
-                tsb_Open.Visible =
-                saveAsToolStripMenuItem.Visible = 
-                openToolStripMenuItem.Visible =
-                newToolStripMenuItem.Visible =
-                string.IsNullOrWhiteSpace(path)))
+                    tsb_SaveAs.Visible =
+                    tsb_New.Visible =
+                    tsb_Open.Visible =
+                    saveAsToolStripMenuItem.Visible = 
+                    openToolStripMenuItem.Visible =
+                    newToolStripMenuItem.Visible =
+                    string.IsNullOrWhiteSpace(path)
+                )
+            )
                 Open(path);
         }
 
@@ -80,7 +82,7 @@ namespace MiMFa.UIL.Editor
         public string Save(string path)
         {
             if (string.IsNullOrWhiteSpace(path)) return null;
-            Editor.EditBox.SaveToFile(path, Encoding.UTF8);
+            IOService.WriteText(path, Editor.EditBox.Text, Encoding.UTF8);
             Path = path;
             Text = "MiMFa Editor - " + System.IO.Path.GetFileName(Path);
             EditBoxTextChanged(this, EventArgs.Empty);
@@ -222,7 +224,7 @@ namespace MiMFa.UIL.Editor
 
         private void EditDialog_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (Editor.EditBox.UndoEnabled)
+            if (Editor.EditBox.IsChanged)
             {
                 var b = DialogService.Warning("There you have some unsaved changes," + Environment.NewLine + "Do you want to save them before?");
                 if (b == true) Save();

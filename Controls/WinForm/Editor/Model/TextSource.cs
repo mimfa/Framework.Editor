@@ -322,7 +322,6 @@ namespace MiMFa.Controls.WinForm.Editor.Model
 
         public virtual void Dispose()
         {
-            ;
         }
 
         public virtual void SaveToFile(string fileName, Encoding enc)
@@ -331,7 +330,6 @@ namespace MiMFa.Controls.WinForm.Editor.Model
             {
                 for (int i = 0; i < Count - 1;i++ )
                     sw.WriteLine(lines[i].Text);
-
                 sw.Write(lines[Count-1].Text);
             }
         }
