@@ -383,7 +383,7 @@ namespace MiMFa.Controls.WinForm.Editor.Tools
                 using (var brush = new SolidBrush(item.BackColor))
                     e.Graphics.FillRectangle(brush, 1, y, ClientSize.Width - 1 - 1, itemHeight - 1);
 
-                if (ImageList != null && visibleItems[i].ImageIndex >= 0)
+                if (ImageList != null && ImageList.Images.Count > item.ImageIndex && visibleItems[i].ImageIndex >= 0)
                     e.Graphics.DrawImage(ImageList.Images[item.ImageIndex], 1, y);
 
                 if (i == FocussedItemIndex)

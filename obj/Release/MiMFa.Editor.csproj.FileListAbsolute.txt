@@ -63,7 +63,6 @@ D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\MiMFa F
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\MiMFa Framework.dll.config
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\HtmlAgilityPack.pdb
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\HtmlAgilityPack.xml
-D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa.Editor.csprojAssemblyReference.cache
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa.Controls.WinForm.Editor.EditBox.resources
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa.Controls.WinForm.Editor.EditCodeBox.resources
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa.Controls.WinForm.Editor.Tools.FindForm.resources
@@ -80,3 +79,4 @@ D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\MiMFa E
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\MiMFa Editor.pdb
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa Editor.exe
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa Editor.pdb
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa.Editor.csproj.AssemblyReference.cache
