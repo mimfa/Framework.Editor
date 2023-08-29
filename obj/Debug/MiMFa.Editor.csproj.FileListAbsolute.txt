@@ -55,7 +55,6 @@ D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Editor.csproj.CopyComplete
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa Framework.Editor.exe
 D:\MiMFa\My Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa Framework.Editor.pdb
-D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Editor.csprojAssemblyReference.cache
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Controls.WinForm.Editor.EditBox.resources
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Controls.WinForm.Editor.Tools.FindForm.resources
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Controls.WinForm.Editor.Tools.GoToForm.resources
@@ -79,3 +78,4 @@ D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\MiMFa Edi
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\MiMFa Editor.pdb
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa Editor.exe
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa Editor.pdb
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Editor.csproj.AssemblyReference.cache
