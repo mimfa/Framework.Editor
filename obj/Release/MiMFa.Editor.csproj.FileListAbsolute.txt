@@ -80,3 +80,4 @@ D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\MiMFa E
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa Editor.exe
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa Editor.pdb
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa.Editor.csproj.AssemblyReference.cache
+D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\Microsoft.mshtml.dll
