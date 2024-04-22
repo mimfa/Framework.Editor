@@ -181,6 +181,34 @@ namespace MiMFa.UIL.Editor
         {
             Editor.EditBox.ToggleComment();
         }
+        private void removeCommentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Editor.EditBox.RemoveComment();
+        }
+        private void commentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Editor.EditBox.Comment();
+        }
+        private void unCommentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Editor.EditBox.UnComment();
+        }
+        private void lowerCasesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Editor.EditBox.LowerCase();
+        }
+        private void uPPERCASEToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Editor.EditBox.UpperCase();
+        }
+        private void sentenceCaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Editor.EditBox.SentenceCase();
+        }
+        private void titleCaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Editor.EditBox.TitleCase();
+        }
         private void upperCaseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Editor.EditBox.ToggleCase();
@@ -231,6 +259,7 @@ namespace MiMFa.UIL.Editor
                 else if (!b.HasValue) e.Cancel = true;
             }
         }
+
 
     }
 }

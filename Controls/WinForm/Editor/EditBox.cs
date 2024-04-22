@@ -4514,6 +4514,78 @@ namespace MiMFa.Controls.WinForm.Editor
             Selection.Normalize();
             RemoveLinePrefix(commentPrefix);
         }
+        /// <summary>
+        /// Remove comments from selected lines
+        /// </summary>
+        public void RemoveComment()
+        {
+            RemoveAfter(CommentPrefix);
+        }
+        /// <summary>
+        /// Remove everything after the prefix from the selected lines
+        /// </summary>
+        public virtual void RemoveAfter(string prefix)
+        {
+            if (string.IsNullOrEmpty(prefix))
+                return;
+            Selection.Normalize();
+            Range old = Selection.Clone();
+            int from = Math.Min(Selection.Start.LineIndex, Selection.End.LineIndex);
+            int to = Math.Max(Selection.Start.LineIndex, Selection.End.LineIndex);
+            BeginUpdate();
+            Selection.BeginUpdate();
+            lines.Manager.BeginAutoUndoCommands();
+            lines.Manager.ExecuteCommand(new SelectCommand(TextSource));
+            for (int i = from; i <= to; i++)
+            {
+                string text = lines[i].Text;
+                int ind = text.IndexOf(prefix);
+                if (ind >= 0)
+                {
+                    Selection.Start = new Place(ind, i);
+                    Selection.End = new Place(text.Length + prefix.Length, i);
+                    ClearSelected();
+                }
+            }
+            Selection.Start = new Place(0, from);
+            Selection.End = new Place(lines[to].Count, to);
+            needRecalc = true;
+            lines.Manager.EndAutoUndoCommands();
+            Selection.EndUpdate();
+            EndUpdate();
+        }
+        /// <summary>
+        /// Remove everything after the prefix from the selected lines
+        /// </summary>
+        public virtual void RemoveBefore(string prefix)
+        {
+            if (string.IsNullOrEmpty(prefix)) return;
+            Selection.Normalize();
+            Range old = Selection.Clone();
+            int from = Math.Min(Selection.Start.LineIndex, Selection.End.LineIndex);
+            int to = Math.Max(Selection.Start.LineIndex, Selection.End.LineIndex);
+            BeginUpdate();
+            Selection.BeginUpdate();
+            lines.Manager.BeginAutoUndoCommands();
+            lines.Manager.ExecuteCommand(new SelectCommand(TextSource));
+            for (int i = from; i <= to; i++)
+            {
+                string text = lines[i].Text;
+                int ind = text.IndexOf(prefix);
+                if (ind >= 0)
+                {
+                    Selection.Start = new Place(0, i);
+                    Selection.End = new Place(ind, i);
+                    ClearSelected();
+                }
+            }
+            Selection.Start = new Place(0, from);
+            Selection.End = new Place(lines[to].Count, to);
+            needRecalc = true;
+            lines.Manager.EndAutoUndoCommands();
+            Selection.EndUpdate();
+            EndUpdate();
+        }
 
         public void OnKeyPressing(KeyPressEventArgs args)
         {
