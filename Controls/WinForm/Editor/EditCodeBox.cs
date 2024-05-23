@@ -21,6 +21,14 @@ namespace MiMFa.Controls.WinForm.Editor
         [DefaultValue("(?<=[\\W]|^)([A-z$_]\\w*\\.?)+")]
         public string SourcePattern { get; set; } = "(?<=[\\W]|^)([A-z$_]\\w*\\.?)+";
         public List<Item> SourceItems = new List<Item>();
+        public override string Text { get => EditBox.Text; set => EditBox.Text = value; }
+        public bool HasEditBox { get => EditBox.Visible; set => EditBox.Visible = value; }
+        public bool HasMapBox { get => MapBox.Visible; set => MapBox.Visible = value; }
+        public bool HasRulerBox { get => RulerBox.Visible; set => RulerBox.Visible = value; }
+        public bool HasLineNumbers { get => EditBox.ShowLineNumbers; set => EditBox.ShowLineNumbers = value; }
+        public bool ShowScrollBars { get => EditBox.ShowScrollBars; set => EditBox.ShowScrollBars = value; }
+        public Model.Syntax.Language Language { get => EditBox.Language; set => EditBox.Language = value; }
+        public bool AutoDetectLanguage { get => EditBox.AutoDetectLanguage; set => EditBox.AutoDetectLanguage = value; }
 
         public EditCodeBox()
         {
@@ -29,6 +37,7 @@ namespace MiMFa.Controls.WinForm.Editor
             IntelliCode.ListView.Set(AutoCompleteHandler);
             IntelliCode.ListView.AutoSize = true;
             EditBox.TextChangedDelayed += (s,o)=>TextChanged(s, o);
+            EditBox.AutoDetectLanguage = true;
         }
 
         private IEnumerable<Item> AutoCompleteHandler(AutoCompleteListView sender, string arg)
