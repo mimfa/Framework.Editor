@@ -67,8 +67,6 @@ D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\System.Da
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\HtmlAgilityPack.dll
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\MiMFa Framework.pdb
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\MiMFa Framework.dll.config
-D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\HtmlAgilityPack.pdb
-D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Debug\HtmlAgilityPack.xml
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Controls.WinForm.Editor.EditCodeBox.resources
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Editor.csproj.CoreCompileInputs.cache
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Debug\MiMFa.Editor.csproj.CopyComplete

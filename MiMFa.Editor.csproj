@@ -177,6 +177,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Controls\WinForm\Editor\Model\Syntax\SyntaxHighlighter.cs.old" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -61,8 +61,6 @@ D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\System.
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\HtmlAgilityPack.dll
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\MiMFa Framework.pdb
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\MiMFa Framework.dll.config
-D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\HtmlAgilityPack.pdb
-D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\bin\Release\HtmlAgilityPack.xml
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa.Controls.WinForm.Editor.EditBox.resources
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa.Controls.WinForm.Editor.EditCodeBox.resources
 D:\Product\Technology\MiMFa Framework\MiMFa Framework\Editor\obj\Release\MiMFa.Controls.WinForm.Editor.Tools.FindForm.resources
