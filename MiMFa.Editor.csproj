@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{ED0E2DAD-4B4E-4B7C-A546-B48ADA5023FC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MiMFa</RootNamespace>
+    <RootNamespace>MiMFa.Editor</RootNamespace>
     <AssemblyName>MiMFa Editor</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -207,10 +207,9 @@
     <None Include="Resources\Repace.png" />
     <Content Include="Script.ico" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Core\MiMFa.csproj">
-      <Project>{adc72cd2-885e-442a-983e-0ba87b7234ef}</Project>
+      <Project>{b7cbc810-9f1b-4320-b847-b5335dc14e9d}</Project>
       <Name>MiMFa</Name>
     </ProjectReference>
   </ItemGroup>

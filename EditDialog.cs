@@ -17,7 +17,7 @@ namespace MiMFa.UIL.Editor
     {
         public string Path = null;
 
-        public event EventHandler<TextChangedEventArgs> TextChanged;
+        public new event EventHandler<TextChangedEventArgs> TextChanged;
         public event EventHandler SavedAs = (s, o) => { };
         public event EventHandler Saved = (s, o) => { };
         public event EventHandler Opened = (s, o) => { };

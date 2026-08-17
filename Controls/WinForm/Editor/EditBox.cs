@@ -15,6 +15,7 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
 using Microsoft.Win32;
+using MiMFa.Controls.Standards;
 using MiMFa.Controls.WinForm.Editor.Model;
 using MiMFa.Controls.WinForm.Editor.Model.Syntax;
 using MiMFa.Controls.WinForm.Editor.Tools;
@@ -25,7 +26,7 @@ namespace MiMFa.Controls.WinForm.Editor
     /// <summary>
     /// Fast colored textbox 
     /// </summary>
-    public partial class EditBox : UserControl, ISupportInitialize
+    public partial class EditBox : UserControl, ISupportInitialize, ITextBox
     {
         internal const int minLeftIndent = 8;
         private const int maxBracketSearchIterations = 1000;
@@ -993,7 +994,14 @@ namespace MiMFa.Controls.WinForm.Editor
         /// </summary>
         public Language Language
         {
-            get => SyntaxHighlighter.Language; set => SyntaxHighlighter.Language = value;
+            get => SyntaxHighlighter.Language; set
+            {
+                if (SyntaxHighlighter.Language != value)
+                {
+                    SyntaxHighlighter.Language = value;
+                    OnSyntaxHighlight(new TextChangedEventArgs(Range));
+                }
+            }
         }
 
         /// <summary>
@@ -1304,7 +1312,7 @@ namespace MiMFa.Controls.WinForm.Editor
 
 
         [Browsable(false)]
-        public FindForm FindForm { get; private set; }
+        public new FindForm FindForm { get; private set; }
 
         [Browsable(false)]
         public ReplaceForm ReplaceForm { get; private set; }
@@ -7823,7 +7831,7 @@ window.status = ""#print"";
                 case ".php":
                     return Language.PHP;
                 case ".lua":
-                    return Language.Lua;
+                    return Language.LUA;
                 case ".json":
                     return Language.JSON;
                 case ".htm":

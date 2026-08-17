@@ -518,7 +518,7 @@ namespace MiMFa.UIL.Editor
             // 
             this.tsb_Undo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsb_Undo.Enabled = false;
-            this.tsb_Undo.Image = global::MiMFa.Properties.Resources.Undo;
+            this.tsb_Undo.Image = global::MiMFa.Editor.Properties.Resources.Undo;
             this.tsb_Undo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsb_Undo.Margin = new System.Windows.Forms.Padding(0);
             this.tsb_Undo.Name = "tsb_Undo";
@@ -531,7 +531,7 @@ namespace MiMFa.UIL.Editor
             // 
             this.tsb_Redo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsb_Redo.Enabled = false;
-            this.tsb_Redo.Image = global::MiMFa.Properties.Resources.Redo;
+            this.tsb_Redo.Image = global::MiMFa.Editor.Properties.Resources.Redo;
             this.tsb_Redo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsb_Redo.Margin = new System.Windows.Forms.Padding(0);
             this.tsb_Redo.Name = "tsb_Redo";
@@ -544,7 +544,7 @@ namespace MiMFa.UIL.Editor
             // 
             this.tsb_Reload.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsb_Reload.Enabled = false;
-            this.tsb_Reload.Image = global::MiMFa.Properties.Resources.Refresh;
+            this.tsb_Reload.Image = global::MiMFa.Editor.Properties.Resources.Refresh;
             this.tsb_Reload.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsb_Reload.Margin = new System.Windows.Forms.Padding(0);
             this.tsb_Reload.Name = "tsb_Reload";
@@ -556,7 +556,7 @@ namespace MiMFa.UIL.Editor
             // tsb_New
             // 
             this.tsb_New.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsb_New.Image = global::MiMFa.Properties.Resources.Document;
+            this.tsb_New.Image = global::MiMFa.Editor.Properties.Resources.Document;
             this.tsb_New.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsb_New.Margin = new System.Windows.Forms.Padding(0);
             this.tsb_New.Name = "tsb_New";
@@ -568,7 +568,7 @@ namespace MiMFa.UIL.Editor
             // tsb_Open
             // 
             this.tsb_Open.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsb_Open.Image = global::MiMFa.Properties.Resources.Directory;
+            this.tsb_Open.Image = global::MiMFa.Editor.Properties.Resources.Directory;
             this.tsb_Open.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsb_Open.Margin = new System.Windows.Forms.Padding(0);
             this.tsb_Open.Name = "tsb_Open";
@@ -581,7 +581,7 @@ namespace MiMFa.UIL.Editor
             // 
             this.tsb_Save.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsb_Save.Enabled = false;
-            this.tsb_Save.Image = global::MiMFa.Properties.Resources.Save_Green;
+            this.tsb_Save.Image = global::MiMFa.Editor.Properties.Resources.Save_Green;
             this.tsb_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsb_Save.Margin = new System.Windows.Forms.Padding(0);
             this.tsb_Save.Name = "tsb_Save";
@@ -593,7 +593,7 @@ namespace MiMFa.UIL.Editor
             // tsb_SaveAs
             // 
             this.tsb_SaveAs.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsb_SaveAs.Image = global::MiMFa.Properties.Resources.SaveAs_Green;
+            this.tsb_SaveAs.Image = global::MiMFa.Editor.Properties.Resources.SaveAs_Green;
             this.tsb_SaveAs.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsb_SaveAs.Margin = new System.Windows.Forms.Padding(0);
             this.tsb_SaveAs.Name = "tsb_SaveAs";
@@ -605,7 +605,7 @@ namespace MiMFa.UIL.Editor
             // tsb_Print
             // 
             this.tsb_Print.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsb_Print.Image = global::MiMFa.Properties.Resources.Print;
+            this.tsb_Print.Image = global::MiMFa.Editor.Properties.Resources.Print;
             this.tsb_Print.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsb_Print.Margin = new System.Windows.Forms.Padding(0);
             this.tsb_Print.Name = "tsb_Print";
@@ -618,7 +618,7 @@ namespace MiMFa.UIL.Editor
             // 
             this.toolStripButton10.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripButton10.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton10.Image = global::MiMFa.Properties.Resources.Zoom_In;
+            this.toolStripButton10.Image = global::MiMFa.Editor.Properties.Resources.Zoom_In;
             this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton10.Margin = new System.Windows.Forms.Padding(0);
             this.toolStripButton10.Name = "toolStripButton10";
@@ -631,7 +631,7 @@ namespace MiMFa.UIL.Editor
             // 
             this.toolStripButton9.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripButton9.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton9.Image = global::MiMFa.Properties.Resources.Zoom_Out;
+            this.toolStripButton9.Image = global::MiMFa.Editor.Properties.Resources.Zoom_Out;
             this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton9.Margin = new System.Windows.Forms.Padding(0);
             this.toolStripButton9.Name = "toolStripButton9";
@@ -650,7 +650,7 @@ namespace MiMFa.UIL.Editor
             // toolStripButton3
             // 
             this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = global::MiMFa.Properties.Resources.Magnifier;
+            this.toolStripButton3.Image = global::MiMFa.Editor.Properties.Resources.Magnifier;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Margin = new System.Windows.Forms.Padding(0);
             this.toolStripButton3.Name = "toolStripButton3";
@@ -662,7 +662,7 @@ namespace MiMFa.UIL.Editor
             // toolStripButton2
             // 
             this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::MiMFa.Properties.Resources.Repace;
+            this.toolStripButton2.Image = global::MiMFa.Editor.Properties.Resources.Repace;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Margin = new System.Windows.Forms.Padding(0);
             this.toolStripButton2.Name = "toolStripButton2";
@@ -674,7 +674,7 @@ namespace MiMFa.UIL.Editor
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::MiMFa.Properties.Resources.Marker;
+            this.toolStripButton1.Image = global::MiMFa.Editor.Properties.Resources.Marker;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Margin = new System.Windows.Forms.Padding(0);
             this.toolStripButton1.Name = "toolStripButton1";

@@ -112,10 +112,11 @@ namespace MiMFa.Controls.WinForm.Editor.Model.Syntax
                 case Language.JS:
                     HighlightingMap.CSharpAutoIndentNeeded(sender, args);
                     break; //JS like C#
-                case Language.Lua:
+                case Language.LUA:
                     HighlightingMap.LuaAutoIndentNeeded(sender, args);
                     break;
                 default:
+                    HighlightingMap.CSharpAutoIndentNeeded(sender, args);
                     break;
             }
         }
@@ -129,12 +130,14 @@ namespace MiMFa.Controls.WinForm.Editor.Model.Syntax
         Custom,
         CS,
         VB,
-        HTML,
-        XML,
-        SQL,
         PHP,
         JS,
-        Lua,
+        XML,
+        HTML,
+        CSS,
+        XPath,
+        LUA,
+        SQL,
         JSON
     }
 }

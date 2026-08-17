@@ -1,8 +1,10 @@
-﻿using MiMFa.Controls.WinForm.Editor.Model.AutoComplete;
+﻿using MiMFa.Controls.Standards;
+using MiMFa.Controls.WinForm.Editor.Model.AutoComplete;
 using MiMFa.Controls.WinForm.Editor.Tools;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.Design;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -13,26 +15,33 @@ using System.Windows.Forms;
 
 namespace MiMFa.Controls.WinForm.Editor
 {
-    public partial class EditCodeBox : UserControl
+    [Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", typeof(IDesigner))]
+    public partial class EditCodeBox : UserControl, ITextBox
     {
-        public event EventHandler<TextChangedEventArgs> TextChanged = (s, o) => { };
+        public new event EventHandler<TextChangedEventArgs> TextChanged = (s, o) => { };
         [DefaultValue(true)]
         public bool IsEditBoxSource { get; set; } = true;
         [DefaultValue("(?<=[\\W]|^)([A-z$_]\\w*\\.?)+")]
         public string SourcePattern { get; set; } = "(?<=[\\W]|^)([A-z$_]\\w*\\.?)+";
         public List<Item> SourceItems = new List<Item>();
         public override string Text { get => EditBox.Text; set => EditBox.Text = value; }
-        public bool HasEditBox { get => EditBox.Visible; set => EditBox.Visible = value; }
-        public bool HasMapBox { get => MapBox.Visible; set => MapBox.Visible = value; }
-        public bool HasRulerBox { get => RulerBox.Visible; set => RulerBox.Visible = value; }
-        public bool HasLineNumbers { get => EditBox.ShowLineNumbers; set => EditBox.ShowLineNumbers = value; }
-        public bool ShowScrollBars { get => EditBox.ShowScrollBars; set => EditBox.ShowScrollBars = value; }
+        public bool HasEditBox { get => _HasEditBox; set => _HasEditBox= EditBox.Visible = value; }
+        private bool _HasEditBox = true;
+        public bool HasMapBox { get => _HasMapBox; set => _HasMapBox = MapBox.Visible = value; }
+        private bool _HasMapBox = true;
+        public bool HasRulerBox { get => _HasRulerBox; set => _HasRulerBox = RulerBox.Visible = value; }
+        private bool _HasRulerBox = true;
+        public bool HasLineNumbers { get => _HasLineNumbers; set => _HasLineNumbers=EditBox.ShowLineNumbers = value; }
+        private bool _HasLineNumbers = true;
+        public bool ShowScrollBars { get => _ShowScrollBars; set => _ShowScrollBars= EditBox.ShowScrollBars = value; }
+        private bool _ShowScrollBars = true;
         public Model.Syntax.Language Language { get => EditBox.Language; set => EditBox.Language = value; }
         public bool AutoDetectLanguage { get => EditBox.AutoDetectLanguage; set => EditBox.AutoDetectLanguage = value; }
 
         public EditCodeBox()
         {
             InitializeComponent();
+            if (DesignMode) return;
             IntelliCode.Init(EditBox);
             IntelliCode.ListView.Set(AutoCompleteHandler);
             IntelliCode.ListView.AutoSize = true;

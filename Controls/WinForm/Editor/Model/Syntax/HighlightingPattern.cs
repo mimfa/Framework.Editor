@@ -37,8 +37,8 @@ namespace MiMFa.Controls.WinForm.Editor.Model.Syntax
         public static TextStyle ClassStyle { get; set; } = new TextStyle(Brushes.MediumTurquoise, null, FontStyle.Regular);
         public static TextStyle FunctionStyle { get; set; } = new TextStyle(Brushes.Goldenrod, null, FontStyle.Regular);
         public static TextStyle VariableStyle { get; set; } = new TextStyle(Brushes.PaleVioletRed, null, FontStyle.Regular);
-        public static TextStyle StringStyle { get; set; } = new TextStyle(Brushes.Brown, null, FontStyle.Regular);
-        public static TextStyle NumberStyle { get; set; } = new TextStyle(Brushes.RosyBrown, null, FontStyle.Regular);
+        public static TextStyle StringStyle { get; set; } = new TextStyle(Brushes.Crimson, null, FontStyle.Regular);
+        public static TextStyle NumberStyle { get; set; } = new TextStyle(Brushes.DarkSeaGreen, null, FontStyle.Regular);
         public static TextStyle RegionStyle { get; set; } = new TextStyle(Brushes.Gray, null, FontStyle.Regular);
         public static TextStyle KeywordStyle { get; set; } = new TextStyle(Brushes.Orchid, null, FontStyle.Regular);
         public static TextStyle NormalStyle { get; set; } = new TextStyle(null, null, FontStyle.Regular);
